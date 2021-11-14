@@ -208,7 +208,10 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #0a192f;
+    background-image: url(/img/Backgrounds/bg-section1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     min-height: 100vh;
 }
 
@@ -349,6 +352,10 @@ i {
 
 /*-----------------------###################### ABOUT ME SECTION ##################------------------*/
 .aboutme-conteiner{
+    background-image: url(/img/Backgrounds/bg-section2.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     display: block;
     height: 100vh;
     width: 1030px;
@@ -426,7 +433,22 @@ i {
 
 
 
-
+.bg-1{
+    background-image: url(/img/Backgrounds/bg-section3.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 1200px;
+    height: 100vh;
+}
+.bg-2{
+    background-image: url(/img/Backgrounds/bg-section4.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    width: 1200px;
+    height: 100vh;
+}
 
 
 
