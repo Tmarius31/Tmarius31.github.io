@@ -16,11 +16,13 @@ html {
 body {
     background-color: #0a192f;
 }
-main{
+
+main {
     display: block;
     margin: 0 auto;
     max-width: 1200px;
 }
+
 li {
     list-style: none;
 }
@@ -216,7 +218,7 @@ a:hover {
 }
 
 .hero-description {
-    
+
     max-width: 1030px;
     align-self: center;
 }
@@ -351,7 +353,7 @@ i {
 }
 
 /*-----------------------###################### ABOUT ME SECTION ##################------------------*/
-.aboutme-conteiner{
+.aboutme-conteiner {
     background-image: url(/img/Backgrounds/bg-section2.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -361,30 +363,37 @@ i {
     width: 1030px;
     margin: auto;
 }
-.div-conteiner-aboutme-elements{
+
+.div-conteiner-aboutme-elements {
     display: flex;
     flex-wrap: wrap;
 }
-.aboutme-description{
+
+.aboutme-description {
     flex: 50%;
 }
-.aboutme-img-conteiner{
+
+.aboutme-img-conteiner {
     flex: 50%;
-    
+
 }
-.aboutme-img{
+
+.aboutme-img {
     width: 300px;
     margin: auto;
 }
+
 .img-profil {
     width: 300px;
     outline: 2px solid #11aaa6;
     outline-offset: 10px;
 }
+
 .img-profil:hover {
     outline-offset: -10px;
     transition: 300ms ease-in;
 }
+
 .title-sections {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -392,6 +401,7 @@ i {
     color: #ccd6f6;
     margin-bottom: 40px;
 }
+
 .title-sections::before {
     position: relative;
     bottom: 0x;
@@ -400,6 +410,7 @@ i {
     color: #ff9700;
     font-family: 'Red Hat Mono', monospace;
 }
+
 .title-sections::after {
     content: "";
     display: inline-block;
@@ -410,15 +421,18 @@ i {
     margin-left: 20px;
     background-color: #8892b093;
 }
+
 .skills {
     display: grid;
     grid-template-columns: repeat(2, minmax(140px, 250px));
     gap: 5px 10px;
 }
+
 .skills-arrow {
     color: #20d397;
     margin-right: 15px;
 }
+
 .skills-icons {
     margin-left: 15px;
 }
@@ -432,23 +446,301 @@ i {
 
 
 
+/*----------------------------------------############### EXPERIENCE SECTION ##################-----------------------------*/
+.experience-conteiner {
+    display: block;
+    margin: auto;
+    width: 1030px;
+    height: 100vh;
+}
 
-.bg-1{
-    background-image: url(/img/Backgrounds/bg-section3.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    width: 1200px;
-    height: 100vh;
+.experience-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ccd6f6;
+    margin-bottom: 40px;
 }
-.bg-2{
-    background-image: url(/img/Backgrounds/bg-section4.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    width: 1200px;
-    height: 100vh;
+
+.experience-title::before {
+    position: relative;
+    bottom: 0x;
+    content: "02.";
+    margin-right: 10px;
+    color: #ff9700;
+    font-family: 'Red Hat Mono', monospace;
 }
+
+.experience-title::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #8892b093;
+}
+
+
+
+
+::selection {
+    background: #6d50e2;
+    color: #fff;
+}
+
+.container {
+    max-width: 950px;
+    width: 100%;
+    padding: 40px 50px 40px 40px;
+    margin: 0 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container .topic {
+    font-size: 34px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 50px;
+    position: relative;
+}
+
+.content .list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    color: #333;
+    z-index: 12;
+}
+
+#home:checked~.list label.home,
+#blog:checked~.list label.blog,
+#help:checked~.list label.help,
+#code:checked~.list label.code,
+#about:checked~.list label.about {
+    color: #fff;
+}
+
+.content .list label:hover {
+    color: #112240;
+}
+
+.content .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    border-radius: 12px;
+    background: #112240;
+    transition: all 0.4s ease;
+}
+
+#home:checked~.list .slider {
+    top: 0;
+}
+
+#blog:checked~.list .slider {
+    top: 60px;
+}
+
+#help:checked~.list .slider {
+    top: 120px;
+}
+
+#code:checked~.list .slider {
+    top: 180px;
+}
+
+#about:checked~.list .slider {
+    top: 240px;
+}
+
+.content .text-content {
+    width: 80%;
+    height: 100%;
+}
+
+.content .text {
+    display: none;
+}
+
+.content .text .title {
+    font-size: 25px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.content .text p {
+    text-align: justify;
+}
+
+.content .text-content .home {
+    display: block;
+}
+
+#home:checked~.text-content .home,
+#blog:checked~.text-content .blog,
+#help:checked~.text-content .help,
+#code:checked~.text-content .code,
+#about:checked~.text-content .about {
+    display: block;
+}
+
+#blog:checked~.text-content .home,
+#help:checked~.text-content .home,
+#code:checked~.text-content .home,
+#about:checked~.text-content .home {
+    display: none;
+}
+
+.content input {
+    display: none;
+}
+
+
+
+/*works*/
+#projects {
+	padding: 10rem 0;
+    margin: auto;
+    max-width: 1030px;
+}
+#projects .item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 15rem;
+	/* gap: 2rem; */
+}
+#projects .item:nth-of-type(even) {
+	flex-direction: row-reverse;
+}
+#projects .item .left {
+	flex: 1;
+}
+#projects .item .right {
+	margin-left: -150px;
+	flex: 1;
+    padding: 10px;
+	background-color: #11224087;
+	border-radius: 12px;
+	box-shadow: 0px 0px 20px #00000028;
+	z-index: 2;
+}
+#projects .item:nth-of-type(even) .right {
+	margin-left: 0;
+}
+#projects .item:nth-of-type(even) .left {
+	margin-left: -150px;
+}
+#projects .item .left .img {
+	height: 500px;
+	overflow: hidden;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0px 0px 20px #8477a933;
+	position: relative;
+    width: 400px;
+}
+#projects .item .left .img::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #20d3978e;
+}
+#projects .item .left .img img {
+	object-fit: cover;
+	transition: 0.3s ease transform;
+}
+#projects .item:hover .left .img img {
+	transform: scale(1.1);
+	z-index: 1;
+}
+#projects .item .right .project-title {
+	font-size: 2.5rem;
+	font-family: 'Montserrat';
+	margin-bottom: 1rem;
+}
+#projects .item .right .project-sub-title {
+	font-size: 1.6rem;
+	margin-bottom: 2rem;
+}
+#projects .item .right .project-desc {
+	color: var(--secondary-gray);
+	margin-bottom: 3rem;
+}
+#projects .item .right .external-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: calc(0.6em - 4px) calc(1.6em - 4px);
+}
+#projects .item .right .external-link svg {
+	width: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+	#projects .item {
+		flex-direction: column;
+	}
+	#projects .item .left {
+		width: 100%;
+	}
+	#projects .item .right {
+		margin-left: 0;
+		width: 90%;
+		margin-top: -150px;
+	}
+	#projects .item:nth-of-type(even) {
+		flex-direction: column;
+	}
+	#projects .item:nth-of-type(even) .left {
+		margin-left: 0;
+	}
+}
+@media only screen and (max-width: 450px) {
+	#projects .item .right .buttons {
+		flex-direction: column;
+	}
+	#projects .item .right .buttons a {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+
+
+
+
+
+/*CONTACTTTTTTTTTTTT*/
+
 
 
 
@@ -470,11 +762,12 @@ i {
 /*---------------------------####################### MEDIA QUERY ONLY MOBILE SCREEN ###################------------------------------ */
 
 @media only screen and (max-width: 768px) {
-    .main{
+    .main {
         display: block;
         margin: 0 auto;
         width: 600px;
     }
+
     .navi-menu {
         position: fixed;
         left: -100%;
@@ -517,6 +810,7 @@ i {
         width: 30px;
         height: 3px;
     }
+
     .hero {
         height: 600px;
         width: 100%;
@@ -552,10 +846,13 @@ i {
     a:hover {
         border: none;
     }
-    .aboutme-conteiner{
+
+    .aboutme-conteiner {
         width: 100%;
     }
-    .aboutme-description, .aboutme-img-conteiner{
+
+    .aboutme-description,
+    .aboutme-img-conteiner {
         flex: 100%;
     }
 }

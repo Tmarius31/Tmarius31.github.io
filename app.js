@@ -38,3 +38,9 @@ var loader = document.getElementById("preloader");
             loader.style.display = 'none';
         }, 2000);
       });
+
+
+
+
+// TABS EVENTS
+
