@@ -224,7 +224,7 @@ a:hover {
 }
 
 .title {
-    color: #ff9700;
+    color:#20d397 ;
     font-size: 16px;
     margin-bottom: 15px;
 
@@ -351,388 +351,27 @@ i {
     color: #ff9700;
     border-bottom: none;
 }
-
-/*-----------------------###################### ABOUT ME SECTION ##################------------------*/
-.aboutme-conteiner {
-    display: block;
-    height: 100vh;
-    width: 1030px;
-    margin: auto;
+@media only screen and (max-width: 768px){
+    .social{
+        display: none;
+    }
+    .conteiner-email{
+        display: none;
+    }
 }
-
-.div-conteiner-aboutme-elements {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-
-.aboutme-description {
-    flex: 50%;
-}
-
-.aboutme-img-conteiner {
-    flex: 50%;
-
-}
-
-.aboutme-img {
-    width: 300px;
-    margin: auto;
-}
-
-.img-profil {
-    width: 300px;
-    outline: 2px solid #11aaa6;
-    outline-offset: 10px;
-}
-
-.img-profil:hover {
-    outline-offset: -10px;
-    transition: 300ms ease-in;
-}
-
-.title-sections {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #ccd6f6;
-    margin-bottom: 40px;
-    margin-top: 100px;
-}
-
-.title-sections::before {
-    position: relative;
-    bottom: 0x;
-    content: "01.";
-    margin-right: 10px;
-    color: #20d397;
-    font-family: 'Red Hat Mono', monospace;
-}
-
-.title-sections::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    top: -6px;
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: #8892b093;
-}
-
-.skills {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(140px, 250px));
-    gap: 5px 10px;
-}
-
-.skills-arrow {
-    color: #20d397;
-    margin-right: 15px;
-}
-
-.skills-icons {
-    margin-left: 15px;
-}
-
-
-
-
-
-
-
-
-
-
-/*----------------------------------------############### EXPERIENCE SECTION ##################-----------------------------*/
-.experience-conteiner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    width: 1030px;
-    
-    
-}
-
-.experience-title {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #ccd6f6;
-    margin-bottom: 40px;
-}
-
-.experience-title::before {
-    position: relative;
-    bottom: 0x;
-    content: "02.";
-    margin-right: 10px;
-    color: #20d397;
-    font-family: 'Red Hat Mono', monospace;
-}
-
-.experience-title::after {
-    content: "";
-    display: inline-block;
-    position: relative;
-    top: -6px;
-    width: 300px;
-    height: 1px;
-    margin-left: 20px;
-    background-color: #8892b093;
-}
-
-
-.container {
-    max-width: 950px;
-    
-    
-    
-  
-    
-}
-
-.content {
-    display: flex;
-    max-width: 900px;
-    height: 300px;
-    
-}
-
-.content .list {
-    
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    margin-right: 50px;
-    position: relative;
-    
-}
-
-.content .list label {
-    height: 60px;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 60px;
-    cursor: pointer;
-    padding-left: 25px;
-    transition: all 0.5s ease;
-    z-index: 12;
-    border-left: 1px solid #8892b07e;
-}
-
-#home:checked~.list label.home,
-#blog:checked~.list label.blog,
-#help:checked~.list label.help
- {
-    color: #fff;
-}
-
-
-
-.content .slider {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 60px;
-    width: 100%;
-    border-left: 3px solid #20d397; 
-    background: #112240;
-    transition: all 0.4s ease;
-}
-
-#home:checked~.list .slider {
-    top: 0;
-}
-
-#blog:checked~.list .slider {
-    top: 60px;
-}
-
-#help:checked~.list .slider {
-    top: 120px;
-}
-.title{
-    color:#ccd6f6;
-}
-.title:hover{
-    color: #20d397;
-}
-.title-experience{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #ccd6f6;
-    font-size: 22px;
-}
- .link-experience{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-}
-.content .text-content {
-    width: 60%;
-    height: 100%;
-}
-.date-experience{
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-.tasks-experience li{
-    padding-top: 10px;
-}
-
-.content .text {
-    display: none;
-}
-
-.content .text-content .home {
-    display: block;
-}
-
-#home:checked~.text-content .home,
-#blog:checked~.text-content .blog,
-#help:checked~.text-content .help,
-#code:checked~.text-content .code,
-#about:checked~.text-content .about {
-    display: block;
-}
-
-#blog:checked~.text-content .home,
-#help:checked~.text-content .home,
-#code:checked~.text-content .home,
-#about:checked~.text-content .home {
-    display: none;
-}
-
-.content input {
-    display: none;
-}
-
-
-
-/*----------------####### WORKS ###########----------------*/
-#projects {
-	padding: 10rem 0;
-    margin: auto;
-    max-width: 1030px;
-}
-#projects .item {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	max-width: 800px;
-	margin: 0 auto;
-	margin-bottom: 15rem;
-	/* gap: 2rem; */
-}
-#projects .item:nth-of-type(even) {
-	flex-direction: row-reverse;
-}
-#projects .item .left {
-	flex: 1;
-}
-#projects .item .right {
-	margin-left: -150px;
-	flex: 2;
-    padding: 15px;
-	z-index: 2;
-    background-color: #112240;
-    border-radius: 12px;
-}
-#projects .item:nth-of-type(even) .right {
-	margin-left: 0;
-}
-#projects .item:nth-of-type(even) .left {
-	margin-left: -150px;
-}
-#projects .item .left .img {
-	
-	overflow: hidden;
-	border-radius: 12px;
-	overflow: hidden;
-	box-shadow: 0px 0px 20px #8477a933;
-	position: relative;
-    
-}
-#projects .item .left .img::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 0;
-	height: 100%;
-	width: 100%;
-    background-color: rgba(44, 38, 38, 0.156);
-}
-#projects .item .left .img img {
-	object-fit: cover;
-	transition: 0.3s ease transform;
-}
-#projects .item:hover .left .img img {
-	transform: scale(1.1);
-	z-index: 1;
-}
-#projects .item .right .project-title {
-    color: #20d397;
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-#projects .item .right .project-sub-title {
-	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
-	margin-bottom: 2rem;
-    color: #ccd6f6;
-}
-#projects .item .right .project-desc {
-	background-color: #1a325b;
-	margin-bottom: 1.6rem;
-    box-shadow: 0px 0px 10px #112240;
-    padding: 10px;
-    border-radius: 12px;
-    color: #ccd6f6;
-}
-#projects .item .right .tec-used{
-    margin-bottom: 15px;
-}
-
-@media only screen and (max-width: 768px) {
-	#projects .item {
-		flex-direction: column;
-	}
-	#projects .item .left {
-		width: 100%;
-	}
-	#projects .item .right {
-		margin-left: 0;
-		width: 90%;
-		margin-top: -150px;
-	}
-	#projects .item:nth-of-type(even) {
-		flex-direction: column;
-	}
-	#projects .item:nth-of-type(even) .left {
-		margin-left: 0;
-	}
-}
-@media only screen and (max-width: 450px) {
-	#projects .item .right .buttons {
-		flex-direction: column;
-	}
-	#projects .item .right .buttons a {
-		width: 100%;
-		text-align: center;
-	}
-}
-
-
-
 
 
 
 
 /*CONTACTTTTTTTTTTTT*/
 .conteiner-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 1030px;
-    height: 100vh;
     margin: auto;
+    padding: 0px 40px;
 }
 .title-contact{
     margin-top: 50px;
@@ -749,76 +388,45 @@ i {
 }
 .description-contact{
     text-align: center;
-   margin-top: 10px;
+    margin-top: 10px;
 }
-
-
-
-/* Style inputs with type="text", select elements and textareas */
-
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */ 
-    border-bottom: 1px solid #20d397; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    color: #20d397;
-    font-size: 17px;
-    border: 1px solid #20d397;
-    border-radius: 5px;
+.btn-conteiner{
+    display: flex;
+    width: 1030px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+.btn-contact{
+    border:  1px solid #20d397;
     padding: 10px 20px;
-    background-color: #112240;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #20d3978e;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container-cont {
-    border-radius: 5px;
-    width: 500px;
-    margin: 20px auto;
-    padding: 20px;
-  }
-  .form1{
-      color: #20d397;
-  }
-  .form2{
-      background-color: transparent;
-      color: #ccd6f6;
-      border: none;
-  }
-  .form3{
-      background-color: transparent;
-      border-bottom: 1px solid #20d397;
-  }
+    border-radius: 10px;
+}
+@media only screen and (max-width: 768px){
 
-
-
-
-
+}
 
 
 
 /*Footer*/
 
 .footer{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-size: 12px;
-    max-width: 400px;
-    margin:30px auto;
+    max-width: 1030px;
+    margin: 20px auto;
 }
-
-
+.social-footer{
+    display: none;
+}
+@media only screen and (max-width: 768px){
+.social-footer{
+    display: block;
+}
+}
 /*---------------------------####################### MEDIA QUERY ONLY MOBILE SCREEN ###################------------------------------ */
 
 @media only screen and (max-width: 768px) {
@@ -878,8 +486,8 @@ input[type=text], select, textarea {
 
     .hero-description {
         width: 100%;
-        padding-right: 20px;
-        padding-left: 20px;
+        padding-right: 40px;
+        padding-left: 40px;
     }
 
     .title {
@@ -905,15 +513,6 @@ input[type=text], select, textarea {
 
     a:hover {
         border: none;
-    }
-
-    .aboutme-conteiner {
-        width: 100%;
-    }
-
-    .aboutme-description,
-    .aboutme-img-conteiner {
-        flex: 100%;
     }
 }
 

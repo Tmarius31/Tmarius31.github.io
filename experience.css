@@ -1,0 +1,165 @@
+/*----------------------------------------############### EXPERIENCE SECTION ##################-----------------------------*/
+body{
+    background: blue;
+}
+.experience-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1030px;
+    background-color: brown;
+    
+}
+
+.experience-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ccd6f6;
+    margin-bottom: 40px;
+    background-color: cadetblue;
+}
+
+.experience-title::before {
+    position: relative;
+    bottom: 0x;
+    content: "02.";
+    margin-right: 10px;
+    color: #20d397;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.experience-title::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #8892b093;
+}
+
+
+.container {
+    max-width: 950px;
+    background: yellow;
+}
+
+.content {
+    display: flex;
+    max-width: 900px;
+    height: 300px;
+    background-color: coral;
+    
+}
+
+.content .list {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    margin-right: 50px;
+    position: relative;
+    
+}
+
+.content .list label {
+    height: 60px;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 25px;
+    transition: all 0.5s ease;
+    z-index: 12;
+    border-left: 1px solid #8892b07e;
+}
+
+#home:checked~.list label.home,
+#blog:checked~.list label.blog,
+#help:checked~.list label.help
+  {
+    color: #fff;
+}
+
+
+
+.content .slider {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    border-left: 3px solid #20d397; 
+    background: #112240;
+    transition: all 0.4s ease;
+}
+
+#home:checked~.list .slider {
+    top: 0;
+}
+
+#blog:checked~.list .slider {
+    top: 60px;
+}
+
+#help:checked~.list .slider {
+    top: 120px;
+}
+.title{
+    color:#ccd6f6;
+}
+.title:hover{
+    color: #20d397;
+}
+.title-experience{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ccd6f6;
+    font-size: 22px;
+}
+ .link-experience{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+.content .text-content {
+    width: 60%;
+    height: 100%;
+}
+.date-experience{
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.tasks-experience li{
+    padding-top: 10px;
+}
+
+.content .text {
+    display: none;
+}
+
+.content .text-content .home {
+    display: block;
+}
+
+#home:checked~.text-content .home,
+#blog:checked~.text-content .blog,
+#help:checked~.text-content .help,
+#code:checked~.text-content .code,
+#about:checked~.text-content .about {
+    display: block;
+}
+
+#blog:checked~.text-content .home,
+#help:checked~.text-content .home,
+#code:checked~.text-content .home,
+#about:checked~.text-content .home {
+    display: none;
+}
+
+.content input {
+    display: none;
+}
+
+
+
