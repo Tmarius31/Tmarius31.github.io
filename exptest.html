@@ -4,40 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="experience.css">
+    <link rel="stylesheet" href="exptest1.css">
     <title>Document</title>
 </head>
 <body>
-    <!--EXPERIENCE SECTION-->
-    <div class="experience-conteiner">
-        <div class="container">
-            <h2 class="experience-title">Experiences</h2>
-            <div class="content">
-                <input type="radio" name="slider" checked id="home">
-                <input type="radio" name="slider" id="blog">
-                <input type="radio" name="slider" id="help">
-                <input type="radio" name="slider" id="code">
-                <input type="radio" name="slider" id="about">
-                <div class="list">
-                    <label for="home" class="home">
-                        <i class="fas fa-laptop-code"></i>
-                        <span class="title">AvgBeauty</span>
-                    </label>
-                    <label for="blog" class="blog">
-                        <i class="fas fa-laptop-code"></i>
-                        <span class="title">A.I.M</span>
-                    </label>
-                    <label for="help" class="help">
-                        <i class="fas fa-laptop-code"></i>
-                        <span class="title">Corporate</span>
-                    </label>
-                    <div class="slider"></div>
-                </div>
-                <div class="text-content">
-                    <div class="home text">
-                        <div class="title-experience">Digital Marketing</div><a class="link-experience" href="#">#Avg
-                            Medical Center</a>
-                        <p class="date-experience">December 2018 - May 2019</p>
+    <div class="tabs">
+        <div class="tab-header">
+          <div class="active">
+            <i class="fas fa-laptop-code"></i> Avg
+          </div>
+          <div>
+            <i class="fas fa-laptop-code"></i> A.I.M.
+          </div>
+          <div>
+            <i class="fas fa-laptop-code"></i> CointServices
+          </div>
+        </div>
+        <div class="tab-indicator"></div>
+        <div class="tab-content">
+          
+          <div class="active">
+            <i class="fa fa-code"></i>
+            <h2>Digital Marketing # Avg Medical Center</h2>
+            <p class="date-experience">December 2018 - May 2019</p>
                         <ul class="tasks-experience">
                             <li><i class="fas skills-arrow fa-caret-right"></i>Define marketing strategies and propose
                                 online and offline initiatives.</li>
@@ -46,11 +35,12 @@
                             <li><i class="fas skills-arrow fa-caret-right"></i>Coordinate all online marketing
                                 activities.</li>
                         </ul>
-                    </div>
-                    <div class="blog text">
-                        <div class="title-experience">Web designer</div><a class="link-experience" href="#">#Accademia
-                            Internazionale Mauriziana</a>
-                        <p class="date-experience">May 2019 - November 2020</p>
+          </div>
+          
+          <div>
+            <i class="fa fa-pencil-square"></i>
+            <h2>Web designer #Accademia Internazionale Mauriziana</h2>
+            <p class="date-experience">May 2019 - November 2020</p>
                         <ul class="tasks-experience">
                             <li><i class="fas skills-arrow fa-caret-right"></i>I dealt with the planning and design of
                                 web products, from the planning and implementation of information architectures to the
@@ -59,11 +49,12 @@
                             <li><i class="fas skills-arrow fa-caret-right"></i>Creating eye-catching graphics for
                                 advertising or mail marketing campaigns.</li>
                         </ul>
-                    </div>
-                    <div class="help text">
-                        <div class="title-experience">Web developer</div><a class="link-experience" href="#">#Corporate
-                            Integral Services</a>
-                        <p class="date-experience">November 2020 - Present</p>
+          </div>
+          
+          <div>
+            <i class="fa fa-bar-chart"></i>
+            <h2>Web Developer #Corporate Integral Services</h2>
+            <p class="date-experience">November 2020 - Present</p>
                         <ul class="tasks-experience">
                             <li><i class="fas skills-arrow fa-caret-right"></i>Developing new applications and websites.
                             </li>
@@ -74,10 +65,29 @@
                             <li><i class="fas skills-arrow fa-caret-right"></i>Mantenersi aggiornato sui nuovi linguaggi
                                 di programmazione, tecnologie e tendenze del mercato.</li>
                         </ul>
-                    </div>
-                </div>
-            </div>
+          </div>
+          
         </div>
-    </div>
+      </div>
+      <script>
+          function _class(name){
+  return document.getElementsByClassName(name);
+}
+ 
+let tabPanes = _class("tab-header")[0].getElementsByTagName("div");
+ 
+for(let i=0;i<tabPanes.length;i++){
+  tabPanes[i].addEventListener("click",function(){
+    _class("tab-header")[0].getElementsByClassName("active")[0].classList.remove("active");
+    tabPanes[i].classList.add("active");
+    
+    _class("tab-indicator")[0].style.top = `calc(80px + ${i*50}px)`;
+    
+    _class("tab-content")[0].getElementsByClassName("active")[0].classList.remove("active");
+    _class("tab-content")[0].getElementsByTagName("div")[i].classList.add("active");
+    
+  });
+}
+      </script>
 </body>
 </html>
