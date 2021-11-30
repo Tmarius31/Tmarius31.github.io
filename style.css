@@ -743,24 +743,24 @@ i {
     }
 
     .title {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .subtitle {
-        font-size: 25px;
+        font-size: 40px;
     }
 
     .subdescription {
-        font-size: 20px;
+        font-size: 35px;
     }
 
     .description {
         width: 100%;
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .btn {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     a:hover {
