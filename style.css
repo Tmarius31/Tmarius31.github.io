@@ -451,6 +451,109 @@ img {
         flex-direction: column;
     }
 }
+/*--------------########################### EXPIRIENCE #################---------------*/
+.conteiner-exp{
+    display: block;
+    max-width: 1030px;
+    height: 600px;
+    position: relative;
+    margin:50px auto;
+}
+  .tabs {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:730px;
+    height:380px;
+    padding:30px 20px;
+    overflow:hidden;
+  }
+  .tabs .tab-header {
+    float:left;
+    width:220px;
+    height:100%;
+    border-right:1px solid #ccc;
+    padding:50px 0px;
+  }
+  .tabs .tab-header > div {
+    height:50px;
+    line-height:50px;
+    font-size:16px;
+    color: #ccd6f6;
+    cursor:pointer;
+    padding-left:10px;
+  }
+  .tabs .tab-header > div:hover,
+  .tabs .tab-header > div.active {
+    color: #20d397;
+    background-color: #0f1f36;
+  }
+  .tabs .tab-header div i {
+    display:inline-block;
+    margin-left:10px;
+    margin-right:5px;
+  }
+  .tabs .tab-content {
+    position:relative;
+    height:100%;
+    overflow:hidden;
+  }
+  .tabs .tab-content > div {
+    position:absolute;
+    padding:40px 20px;
+    top:-200%;
+    transition:all 500ms ease-in-out;
+  }
+  .tabs .tab-content > div.active {
+    top:0px;
+  }
+   
+  .tabs .tab-indicator {
+    position:absolute;
+    width:4px;
+    height:50px;
+    background: #20d397;
+    left: 236px;
+    top:80px;
+    transition:all 500ms ease-in-out;
+  }
+  .exp-title{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ccc;
+  }
+  .exp-societa{
+      color: #20d397;
+  }
+  .tasks-experience > li{
+      margin-top: 10px;
+  }
+ .title-sections1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #ccd6f6;
+    margin-bottom: 40px;
+ }
+ .title-sections1::before {
+    position: relative;
+    bottom: 0x;
+    content: "02.";
+    margin-right: 10px;
+    color: #20d397;
+    font-family: 'Red Hat Mono', monospace;
+}
+
+.title-sections1::after {
+    content: "";
+    display: inline-block;
+    position: relative;
+    top: -6px;
+    width: 300px;
+    height: 1px;
+    margin-left: 20px;
+    background-color: #8892b093;
+}
 
 /*--------------########################### SOCIAL % E-MAIL #################---------------*/
 .social {
