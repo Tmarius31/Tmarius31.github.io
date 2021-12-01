@@ -450,84 +450,138 @@ img {
     .div-conteiner-aboutme-elements {
         flex-direction: column;
     }
+    
+    .title-sections::after {
+        width: 120px;
+        
+    }
 }
 /*--------------########################### EXPIRIENCE #################---------------*/
-.conteiner-exp{
-    display: block;
-    max-width: 1030px;
-    height: 600px;
+
+  .wrapper{
+    max-width: 700px;
+    width: 100%;
+    margin: 200px auto;
+    padding: 25px 30px 30px 30px;
+  }
+  .wrapper header{
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+  }
+  .wrapper nav{
     position: relative;
-    margin:50px auto;
-}
-  .tabs {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:730px;
-    height:380px;
-    padding:30px 20px;
-    overflow:hidden;
+    width: 80%;
+    height: 50px;
+    display: flex;
+    align-items: center;
   }
-  .tabs .tab-header {
-    float:left;
-    width:220px;
-    height:100%;
-    border-right:1px solid #ccc;
-    padding:50px 0px;
-  }
-  .tabs .tab-header > div {
-    height:50px;
-    line-height:50px;
-    font-size:16px;
-    color: #ccd6f6;
-    cursor:pointer;
-    padding-left:10px;
-  }
-  .tabs .tab-header > div:hover,
-  .tabs .tab-header > div.active {
+  .wrapper nav label{
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
     color: #20d397;
-    background-color: #0f1f36;
+    font-size: 17px;
+    border-radius: 5px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
   }
-  .tabs .tab-header div i {
-    display:inline-block;
-    margin-left:10px;
-    margin-right:5px;
+  .wrapper nav label:hover{
+    background: #20d39738;
   }
-  .tabs .tab-content {
-    position:relative;
-    height:100%;
-    overflow:hidden;
+  #home:checked ~ nav label.home,
+  #blog:checked ~ nav label.blog,
+  #code:checked ~ nav label.code{
+    color: #fff;
   }
-  .tabs .tab-content > div {
-    position:absolute;
-    padding:40px 20px;
-    top:-200%;
-    transition:all 500ms ease-in-out;
-  }
-  .tabs .tab-content > div.active {
-    top:0px;
-  }
-   
-  .tabs .tab-indicator {
-    position:absolute;
-    width:4px;
-    height:50px;
+  
+  nav .slider{
+    position: absolute;
+    height: 100%;
+    width: 33%;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    border-radius: 5px;
     background: #20d397;
-    left: 236px;
-    top:80px;
-    transition:all 500ms ease-in-out;
+    transition: all 0.3s ease;
+  }
+  input[type="radio"]{
+    display: none;
+  }
+  #blog:checked ~ nav .slider{
+    left: 33%;
+  }
+  #code:checked ~ nav .slider{
+    left: 68%;
+  }
+  
+  section .content{
+    display: none;
+    color: white
+    ;
+  }
+  #home:checked ~ section .content-1,
+  #blog:checked ~ section .content-2,
+  #code:checked ~ section .content-3{
+    display: block;
+  }
+  section .content .title{
+    font-size: 21px;
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+  }
+  section .content p{
+  text-align: justify;
   }
   .exp-title{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #ccc;
+    margin-top: 15px;
   }
   .exp-societa{
       color: #20d397;
   }
-  .tasks-experience > li{
-      margin-top: 10px;
+  .tasks-experience{
+     line-height: 25px;
+     margin-top: 15px;
   }
+  
+  .slideInUp {
+    -webkit-animation-name: slideInUp;
+    animation-name: slideInUp;
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    }
+    @keyframes slideInUp {
+    0% {
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    visibility: visible;
+    }
+    100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    }
+    } 
  .title-sections1{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 30px;
@@ -553,6 +607,11 @@ img {
     height: 1px;
     margin-left: 20px;
     background-color: #8892b093;
+}
+@media only screen and (max-width: 768px){
+    .title-sections1::after{
+        width: 90px;
+    }
 }
 
 /*--------------########################### SOCIAL % E-MAIL #################---------------*/
