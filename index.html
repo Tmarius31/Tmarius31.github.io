@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="/assets/css/style.css">
     <!--Fontawsome-->
     <script src="https://kit.fontawesome.com/2446851376.js" crossorigin="anonymous"></script>
+    <!--Swiper css-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    
     <title>Turcanu Marius</title>
 </head>
 <body>
@@ -600,12 +603,69 @@
                     </div>
                 </div>
             </section>
+            <!--===========================PORTFOGLIO==================================-->
+            <section class="portfoglio section" id="section">
+                <h2 class="section__title">Portfoglio</h2>
+                <span class="section__subtitle">Most recent work</span>
 
+                <div class="portfoglio__container container swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <!--===========================PORTFOGLIO  1 =================================-->
+                        <div class="portfoglio__content grid swiper-slide">
+                            <img src="assets/img/img2.webp" alt="" class="portfoglio__img">
+
+                            <div class="portfoglio__data">
+                                <h3 class="portfoglio__title">AvgBeauty website</h3>
+                                <p class="portfoglio__description">Website adaptable to all devices,with ui components and animated interactions.</p>
+                                <a href="" class="button button--flex button--small portfoglio__button">
+                                    Demo<i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>  
+                        </div>
+
+                         <!--===========================PORTFOGLIO  2 =================================-->
+                         <div class="portfoglio__content grid swiper-slide">
+                            <img src="assets/img/img2.webp" alt="" class="portfoglio__img">
+
+                            <div class="portfoglio__data">
+                                <h3 class="portfoglio__title">AvgBeauty website</h3>
+                                <p class="portfoglio__description">Website adaptable to all devices,with ui components and animated interactions.</p>
+                                <a href="" class="button button--flex button--small portfoglio__button">
+                                    Demo<i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>  
+                        </div>
+
+                         <!--===========================PORTFOGLIO  3 =================================-->
+                         <div class="portfoglio__content grid swiper-slide">
+                            <img src="assets/img/img2.webp" alt="" class="portfoglio__img">
+
+                            <div class="portfoglio__data">
+                                <h3 class="portfoglio__title">AvgBeauty website</h3>
+                                <p class="portfoglio__description">Website adaptable to all devices,with ui components and animated interactions.</p>
+                                <a href="" class="button button--flex button--small portfoglio__button">
+                                    Demo<i class="fas fa-arrow-right button__icon"></i>
+                                </a>
+                            </div>  
+                        </div>
+                    </div>
+                             <!--Arrows-->
+                        <div class="swiper-button-next">
+                            <i class="fas fa-chevron-right swiper-portfoglio-icon"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="fas fa-chevron-left swiper-portfoglio-icon"></i>
+                        </div>
+                             <!--Pagination-->
+                        <div class="swiper-pagination"></div>
+                </div>
+            </section>
     </main>
 
+        <!--Swiper js-->
+        <script src="/assets/js/swiper-bundle.min.js"></script>
 
-
-
+        <!--Main js-->
         <script src="\assets\js\main.js"></script>
 </body>
 </html>
