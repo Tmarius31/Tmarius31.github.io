@@ -98,7 +98,7 @@ modalCloses.forEach((modalClose) =>{
 })
 
 /*==================== navigation portfoglio ====================*/
-let swiper = new Swiper(".mySwiper", {
+let swiperProject = new Swiper(".portfoglio__container ", {
     cssMode: true,
     loop: true,
     navigation: {
@@ -108,5 +108,12 @@ let swiper = new Swiper(".mySwiper", {
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
+    },
+  });
+
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: true,
     },
   });
