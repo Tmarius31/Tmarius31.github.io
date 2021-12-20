@@ -396,7 +396,7 @@ img{
 /*------================= ABOUT ================-------*/
 
 .about__img{
-    width: 200px;
+    width: 300px;
     border-radius: .5rem;
     justify-self: center;
     align-self: center;
@@ -805,7 +805,7 @@ img{
 }
 
 .project__img{
-    width: 232px;
+    width: 322px;
     justify-self: center;
 }
 
@@ -1255,5 +1255,10 @@ img{
 
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .nav__icon,
+    .nav__close,
+    .nav__toggle{
+        display: none;
     }
 }
