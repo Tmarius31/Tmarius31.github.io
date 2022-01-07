@@ -11,11 +11,13 @@
     <script src="https://kit.fontawesome.com/2446851376.js" crossorigin="anonymous"></script>
     <!--Swiper css-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-
+    <!--AOS -Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Turcanu Marius</title>
 </head>
 
 <body>
+    <!--=======================Nav bar ======================================---->
     <header class="header" id="header">
         <nav class="nav container">
             <a href="#" class="nav__logo">Marius</a>
@@ -74,7 +76,7 @@
 
         <!---==================--Home----==========================------>
 
-        <section class="home section" id="home">
+        <section class="home section" id="home" data-aos="fade-up">
             <div class="home__container container grid">
                 <div class="home__content grid">
                     <div class="home__social">
@@ -129,7 +131,7 @@
         </section>
 
         <!--===========================About==================================-->
-        <section class="about section" id="about">
+        <section class="about section" id="about" data-aos="fade-up">
             <h2 class="section__title">About Me</h2>
             <span class="section__subtitle">My introduction</span>
 
@@ -944,7 +946,7 @@
 
 
         <!--=============================Skills========================-->
-        <section class="skills section" id="skills">
+        <section class="skills section" id="skills" data-aos="fade-up">
             <h2 class="section__title">Skills</h2>
             <span class="section__subtitle">My technical level</span>
 
@@ -1112,7 +1114,7 @@
             </div>
         </section>
         <!--=============================Qualification========================-->
-        <section class="qualification section">
+        <section class="qualification section" data-aos="fade-up">
             <h2 class="section__title">Qualification</h2>
             <span class="section__subtitle">My personal journey</span>
 
@@ -1263,7 +1265,7 @@
             </div>
         </section>
         <!--============================= SERVICES ========================-->
-        <section class="services section" id="services">
+        <section class="services section" id="services" data-aos="fade-up">
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">What i offer</span>
 
@@ -1389,7 +1391,7 @@
             </div>
         </section>
         <!--===========================PORTFOGLIO==================================-->
-        <section class="portfoglio section" id="portfoglio">
+        <section class="portfoglio section" id="portfoglio" data-aos="fade-up">
             <h2 class="section__title">Portfoglio</h2>
             <span class="section__subtitle">Most recent work</span>
 
@@ -1449,7 +1451,7 @@
             </div>
         </section>
         <!--=========================== Project mind ==================================-->
-        <section class="project section">
+        <section class="project section" data-aos="fade-up">
             <div class="project__bg">
                 <div class="project__container container grid">
                     <div class="project__data">
@@ -1465,7 +1467,7 @@
             </div>
         </section>
         <!--=========================== Testimonial ==================================-->
-        <section class="testimonial section">
+        <section class="testimonial section" data-aos="fade-up">
             <h2 class="section__title">Testimonial</h2>
             <span class="section__subtitle">My client saying</span>
 
@@ -1547,7 +1549,7 @@
             </div>
         </section>
         <!--=========================== Contact me ==================================-->
-        <section class="contact section" id="contact">
+        <section class="contact section" id="contact" data-aos="fade-up">
             <h2 class="section__title">Contact Me</h2>
             <span class="section__subtitle">Get in touch</span>
 
@@ -1657,9 +1659,13 @@
 
     <!--Swiper js-->
     <script src="/assets/js/swiper-bundle.min.js"></script>
-
+    <!--AOS-Animations -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!--Main js-->
     <script src="assets/js/main.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

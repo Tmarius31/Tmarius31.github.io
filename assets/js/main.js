@@ -1,3 +1,4 @@
+
 /*--------------Menu Show and hidden--------------*/
 
 const navMenu = document.getElementById('nav-menu'),
@@ -98,7 +99,7 @@ modalCloses.forEach((modalClose) =>{
 })
 
 /*==================== navigation portfoglio ====================*/
-let swiperProject = new Swiper(".portfoglio__container ", {
+let swiperProject = new Swiper(".portfoglio__container", {
     cssMode: true,
     loop: true,
     navigation: {
