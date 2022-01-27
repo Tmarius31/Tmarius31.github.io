@@ -165,7 +165,8 @@ img{
 }
 
 .nav__logo{
-    width: 33%;
+    color: var(--first-color);
+    font-weight: var(--font-medium);
     transition: .4s;
 }
 
@@ -348,12 +349,6 @@ img{
     justify-self: center;
 }
 
-.link-cis{
-    font-size: 16px;
-    font-weight: var(--font-semi-bold);
-    color: var(--first-color-alt);
-    text-decoration: underline;
-}
 .about__data{
     text-align: center;
 }
@@ -406,18 +401,12 @@ img{
     font-weight: var(--font-medium);
     color: var(--first-color);
     text-align: center;
-    margin-bottom: 2.5rem;
-}
-
-.skills__description{
-    text-align: center;
     margin-bottom: 1.5rem;
-
 }
 
 .skills__box{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     column-gap: 2.5rem;
 }
 
