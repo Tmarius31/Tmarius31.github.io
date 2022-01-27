@@ -165,8 +165,7 @@ img{
 }
 
 .nav__logo{
-    color: var(--first-color);
-    font-weight: var(--font-medium);
+    width: 33%;
     transition: .4s;
 }
 
