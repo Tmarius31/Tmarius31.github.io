@@ -67,31 +67,7 @@
         }
     }
 
-/* ----------------Variables Dark Theme ----------*/
-body.dark-theme{
-    --first-color-second: hsl(var(--hue-color), 30%, 8%);
-    --title-color: hsl(var(--hue-color), 8%, 95%);
-    --text-color: hsl(var(--hue-color), 8%, 75%);
-    --input-color: hsl(var(--hue-color), 29%, 16%);
-    --body-color: hsl(var(--hue-color), 28%, 12%);
-    --container-color: hsl(var(--hue-color), 29%, 16%);
-}
-/*---------------Button Dark/Light ----------*/
-.nav__btns{
-    display: flex;
-    align-items: center;
-}
 
-.change-theme{
-    font-size: 1.15rem;
-    color: var(--title-color);
-    margin-right: var(--mb-1);
-    cursor: pointer;
-}
-
-.change-theme:hover{
-    color: var(--first-color);
-}
 /*--------------- Instruction Base ----------*/
 *{
     box-sizing: border-box;
@@ -466,6 +442,7 @@ img{
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
     padding-top: 1rem;
+    margin-bottom: 4.5rem;
 }
 
 .services__card{
@@ -497,4 +474,7 @@ img{
     transition: .4s;
 }
 
-/*--------------------- SERVICES-MODUL --------------*/
+/*--------------------- PROJECT --------------*/
+
+
+
