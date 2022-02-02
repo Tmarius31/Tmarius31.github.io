@@ -684,7 +684,11 @@ body.light-theme {
   font-weight: var(--font-medium);
   margin-bottom: .25rem;
 }
-
+.work__tech{
+  font-size: 13px;
+  color: var(--text-color);
+  margin-bottom: .75rem;
+}
 .work__button {
   width: max-content;
   color: var(--first-color);
