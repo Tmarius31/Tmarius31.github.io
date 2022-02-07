@@ -752,6 +752,8 @@ body.light-theme {
   padding-bottom: 3rem;
 }
 
+
+
 .contact__title {
   text-align: center;
   font-size: var(--h3-font-size);
@@ -759,8 +761,8 @@ body.light-theme {
 }
 
 .contact__info {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  gap: 2rem;
 }
 
 .contact__card {
@@ -768,6 +770,7 @@ body.light-theme {
   padding: 1rem;
   border-radius: .75rem;
   text-align: center;
+  width: 300px;
 }
 
 .contact__card-icon {
@@ -951,6 +954,9 @@ body.light-theme {
   }
   .work__filters {
     column-gap: .25rem;
+  }
+  .contact__info{
+    flex-direction: column;
   }
 }
 
